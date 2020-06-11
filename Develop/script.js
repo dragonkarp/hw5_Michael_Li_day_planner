@@ -1,6 +1,7 @@
 //TEST AREA///////////////////////////
 todaysDate();
-generateRow(10, "PM");
+//generateRow(10, "PM");
+generateHoursList();
 //TEST AREA///////////////////////////
 
 
@@ -49,6 +50,12 @@ function todaysDate() {
 function generateHoursList() {
     var workHours = [9,10,11,12,1,2,3,4,5];
     for (var i = 0; i < workHours.length; i++) {
-
+        var meridiem = "";
+        if (i < 4) {
+            meridiem = "AM";
+        } else if (i >= 4) {
+            meridiem = "PM";
+        }
+        generateRow(workHours[i], meridiem);
     }
 }
