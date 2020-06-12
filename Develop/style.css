@@ -70,3 +70,7 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+.timeSpanElSizing {
+  width: 69px;
+  text-align: center;
+}
