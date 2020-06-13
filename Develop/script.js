@@ -30,8 +30,8 @@ function generateRow(hour, meridiem) {
     taskButton.text("Add Event");
     taskButton.attr("id", hour+meridiem+"-button"); // Used for onclick listener.
     var inputBox = $("<input>").addClass("form-control");
-    inputBox.addClass("user-text-input-field");
-    inputBox.attr("id", hour); // Used to select element and apply color based on time.
+    inputBox.addClass("user-text-input-field"); // Used for "enter" key listener.
+    inputBox.attr("id", hour); // Used to select element and apply color based on time. Refer to colorOfBackground() definition. 
     inputBox.attr("type", "text");
     inputBox.attr("aria-label", "Sizing example input");
     inputBox.attr("aria-describedby", "inputGroup-sizing-default");
@@ -153,8 +153,9 @@ function colorOfBackground() {
 //////////QUESTIONS FOR PHIL////////////////
 // 1) ask phil about token failed to consume. 
 // 2) Don't know why the keypress listener will take the value stored in a var inside something else's local scope. 
-// 3) Can;t get background color code to work. Logic help.
-// 4) I don't know what strategy to use to record user input, store it, and output it upon refresh. 
-// 5) Can you compare keys to some other value? ie. var x = {1:one}, does key = 1 evaluate to true?
-        // ended up using an array. I don't fundamentally understand objects, i guess. Not good for iterating with? I seems like Objects are useful if you already know the key, but not if you are trying to find the key. Is this correct?
+// 3) I don't know what strategy to use to record user input, store it, and output it upon refresh. 
+// 4) Can you compare keys to some other value? ie. var x = {1:one}, does key = 1 evaluate to true?
+        // ended up using an array. I don't fundamentally understand objects, i guess. Not good for iterating with? 
+        //I seems like Objects are useful if you already know the key, but not if you are trying to find the key. Is this correct?
+// 5) Why is the "float-right" class not working on the button?
 //////////QUESTIONS FOR PHIL////////////////
