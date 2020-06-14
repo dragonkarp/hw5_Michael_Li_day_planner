@@ -80,10 +80,7 @@ function generateHoursList() {
 // On "Add Event" button click.
 $(document).on("click",".save-button", function(event) {
     event.preventDefault();
-    alert("HELLO WORLD");
-    
     var dataID = $(this).attr("data-id");
-
     var getTask = $("#"+dataID).val();
     localStorage.setItem(dataID, getTask);
     
