@@ -17,8 +17,6 @@ loadData();
 // Using bootstrap classes.
 function generateRow(hour, meridiem, color, i) {
     var mainContainer = $(".mainContainer");
-
-     
     var inputDivEl = $("<div>").addClass("row");
     var timeSpanEl = $("<span>").addClass("input-group-text");
     timeSpanEl.attr("id", "inputGroup-sizing-default");
